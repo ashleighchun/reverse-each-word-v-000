@@ -7,7 +7,7 @@ def reverse_each_word(sentence)
   sentence_array.each do |word|
     backwards << word.reverse
   end
-  backwards.join
+  backwards.join(/ /)
 end
 
 

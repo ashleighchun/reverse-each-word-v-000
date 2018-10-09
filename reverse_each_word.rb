@@ -2,9 +2,9 @@ require "pry"
 
 
 def reverse_each_word(sentence)
-  sentence_array = sentence.join
   backwards = []
-  sentence.each do |word|
+  sentence_array = sentence.split(/ /)
+  sentence_array.each do |word|
     backwards << word.reverse
   end
   backwards

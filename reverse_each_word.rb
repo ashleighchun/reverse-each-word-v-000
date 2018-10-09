@@ -2,6 +2,9 @@ require "pry"
 
 
 def reverse_each_word(sentence)
-  sentence.each do |inverse|
-    inverse.reverse
+  backwards = []
+  sentence.each do |word|
+    backwards << word.reverse
   end
+  backwards
+end

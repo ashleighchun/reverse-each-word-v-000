@@ -11,11 +11,12 @@ require "pry"
 #end
 
 def reverse_each_word(sentence)
+  backwards = []
   sentence_array = sentence.split(/ /)
   sentence_array.collect do |word|
-    word.reverse
+    backwards << word.reverse
   end
-
+  backwards.join(" ")
 end
 
 #turn the string into an array. each word is an element in an array.
